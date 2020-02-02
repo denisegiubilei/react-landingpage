@@ -1,19 +1,9 @@
-export const dummyData = [{
-    id: 0,
-    name: "Product Number 0",
-    imageUrl: "https://placeimg.com/400/400/animals",
-    oldPrice: 248,
-    price: 217,
-    description: "Product description number 0 lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    installments: {
-      count: 10,
-      value: 21.7
-    }
-  },
+export const dummyData = [
   {
     id: 1,
     name: "Product Number 1",
     imageUrl: "https://placeimg.com/400/400/animals?IdArquivo=6506376",
+    oldPrice: 373,
     price: 326,
     description: "Product description number 1 lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     installments: {
@@ -25,7 +15,6 @@ export const dummyData = [{
     id: 2,
     name: "Product Number 2",
     imageUrl: "https://placeimg.com/400/400/animals?IdArquivo=6670538",
-    oldPrice: 373,
     price: 359,
     description: "Product description number 2 lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     installments: {
@@ -63,7 +52,8 @@ export const dummyData = [{
     imageUrl: "https://placeimg.com/400/400/animals?IdArquivo=6670538",
     oldPrice: 408,
     price: 384,
-    description: "Product description number 5 lorem ipsum dolor sit amet, consectetur adipiscing elit."  },
+    description: "Product description number 5 lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  },
   {
     id: 6,
     name: "Product Number 6",
@@ -88,6 +78,29 @@ export const dummyData = [{
       value: 19.9
     },
   }, {
+    id: 7,
+    name: "Product Number 8",
+    imageUrl: "https://placeimg.com/400/400/animals?IdArquivo=6829158",
+    oldPrice: 229,
+    price: 199,
+    description: "Product description number 8 lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    installments: {
+      count: 10,
+      value: 19.9
+    },
+  }, {
+    id: 8,
+    name: "Product Number 8",
+    imageUrl: "https://placeimg.com/400/400/animals?IdArquivo=6829158",
+    oldPrice: 229,
+    price: 199,
+    description: "Product description number 8 lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    installments: {
+      count: 10,
+      value: 19.9
+    },
+  },
+  {
     id: 10,
     name: "Product Number 10",
     imageUrl: "https://placeimg.com/400/400/animals?IdArquivo=6670538",
@@ -359,18 +372,6 @@ export const dummyData = [{
     installments: {
       count: 10,
       value: 17.9
-    }
-  },
-  {
-    id: 37,
-    name: "Product Number 37",
-    imageUrl: "https://placeimg.com/400/400/animals?IdArquivo=6670538",
-    oldPrice: 143,
-    price: 116,
-    description: "Product description number 37 lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    installments: {
-      count: 10,
-      value: 11.6
     }
   }
 ]

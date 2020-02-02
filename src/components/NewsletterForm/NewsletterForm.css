@@ -18,13 +18,3 @@
   width: 80%;
   max-width: 300px;
 }
-
-.newsletter .button{
-  background-color: #0b3658;
-  color: white;
-  font-weight: bold;
-}
-
-.newsletter .button:hover {
-  transform: scale(1.02);
-}

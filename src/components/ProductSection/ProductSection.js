@@ -7,12 +7,32 @@ import './ProductSection.css'
 
 const ProductSection = () => {
 
+  const PRODUCTS_PER_PAGE = 16
+
   const [products, setProducts] = useState([])
+  const [currentPageNumber, setCurrentPageNumber] = useState(0)
+  const [currentProducts, setCurrentProducts] = useState([])
 
   useEffect(() => {
     getProducts()
-      .then(products => setProducts(products))
-  });
+      .then(products => {
+        setProducts(products)
+        setCurrentProducts(products.slice(0, PRODUCTS_PER_PAGE))
+      })
+  }, [])
+
+  const showProductsByPage = page => {
+    const firstProductIndex = PRODUCTS_PER_PAGE * page
+    const lastProductIndex = firstProductIndex + PRODUCTS_PER_PAGE
+    const productsInPage = products.slice(firstProductIndex, lastProductIndex )
+    setCurrentProducts([...currentProducts, ...productsInPage])
+  }
+  
+  const loadMoreProducts = () => {
+    const nextPage = currentPageNumber + 1
+    showProductsByPage(nextPage)
+    setCurrentPageNumber(nextPage)
+  }
 
   return (
     <section className="product-section">
@@ -20,8 +40,9 @@ const ProductSection = () => {
         As melhores ofertas para o seu bichinho! <FontAwesomeIcon icon={faPaw} />
       </h2>
       <div className="container">
-        { products.map(product => <ProductCard product={product} />) }
+        { currentProducts.map((product, index) => <ProductCard product={product} key={index} />) }
       </div>
+      <input type="button" className="button" value="Ver mais produtos!" onClick={loadMoreProducts}/>
     </section>
   )
 }

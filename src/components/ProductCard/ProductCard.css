@@ -2,10 +2,10 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  flex: 1 0 21%; 
   background-color: white;
   padding: 20px;
   border-radius: 5px;
+  width: 20%;
 }
 
 .card p {
@@ -35,23 +35,11 @@
   width: 100%;
 }
 
-.button {
-  background-color: white;
-  border-radius: 4px;
-  border: 1px solid #707070;
-  color: #888;
-  text-align: center;
-  text-decoration: none;
-  cursor: pointer;
-  margin-top: 10px;
-}
-
-.regular {
-  width: 260px;
-  height: 40px;
-}
-
 .addtocart {
+  color: #888;
+  background-color: white;
+  border: 1px solid #707070;
+  margin-top: 10px;
   padding: 8px;
   width: 100%;
 }
