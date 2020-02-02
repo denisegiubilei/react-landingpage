@@ -1,0 +1,62 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1 0 21%; 
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.card p {
+  padding: 5px 0;
+  overflow: hidden;
+}
+
+.card h3 {
+  padding: 8px 0;
+}
+
+.card:hover {
+  cursor: pointer;
+  background-color: #eee9;
+  transform: scale(1.01);
+}
+
+.card:hover .button{
+  background-color: #0b3658;
+  color: white;
+  font-weight: bold;
+  transform: scale(1.01);
+}
+
+.product-img {
+  height: auto;
+  width: 100%;
+}
+
+.button {
+  background-color: white;
+  border-radius: 4px;
+  border: 1px solid #707070;
+  color: #888;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.input {
+  width: 340px;
+  height: 30px;
+}
+
+.regular {
+  width: 260px;
+  height: 40px;
+}
+
+.addtocart {
+  padding: 6px;
+  width: 100%;
+}

@@ -1,0 +1,32 @@
+import React from 'react'
+import { Installments } from './Installments'
+import { currencyFormat } from '../Utils'
+import './ProductPrice.css'
+
+const ProductPrice = ({ price, oldPrice, installments = {} }) => {
+
+  const hasDiscount = oldPrice > price
+
+  return (
+    <>
+      <p>
+        { hasDiscount && <span>De: </span> }
+        <strike>
+          { currencyFormat(oldPrice) }
+        </strike>
+      </p>
+      <p>
+        <span>Por: </span>
+        <span className="price">
+          { currencyFormat(price) }
+        </span>
+      </p>
+      <p>
+        <Installments installments={ installments } />
+      </p>
+    </>
+  )
+}
+
+export default ProductPrice
+
