@@ -18,3 +18,9 @@
   width: 80%;
   max-width: 300px;
 }
+
+@media only screen and (max-width: 600px) {
+  .newsletter {
+    padding: 55px 20px;
+  }
+}
