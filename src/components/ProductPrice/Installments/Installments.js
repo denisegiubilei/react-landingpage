@@ -10,11 +10,10 @@ const Installments = ({ installments }) => {
     <>
       { hasInstallments
           ? <> 
-              Em até
+              ou
                 <span className="highlight"> {count}x </span>
               de 
                 <span className="highlight"> {currencyFormat(value)} </span>
-              sem juros! 
             </>
           : ''
       }

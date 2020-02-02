@@ -21,7 +21,7 @@ const ProductPrice = ({ price, oldPrice, installments = {} }) => {
           { currencyFormat(price) }
         </span>
       </p>
-      <p>
+      <p className="installments">
         <Installments installments={ installments } />
       </p>
     </>

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { ProductCard } from '../ProductCard'
 import { products as getProducts } from '../../services/DummyService'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPaw } from '@fortawesome/free-solid-svg-icons'
+import { faPaw, faSortAmountUpAlt } from '@fortawesome/free-solid-svg-icons'
 import './ProductSection.css'
 
 const ProductSection = () => {
@@ -63,7 +63,7 @@ const ProductSection = () => {
         As melhores ofertas para o seu bichinho! <FontAwesomeIcon icon={faPaw} />
       </h2>
       <div className="filters">
-        <label htmlFor="orderby">Ordenar por: </label>
+        <label htmlFor="orderby"><FontAwesomeIcon icon={faSortAmountUpAlt} size='lg' /></label>
         <select id="orderby" className="select" onChange={sortProducts}>
           {ORDERBY_OPTIONS.map(option => (
             <option value={option.key}>{option.value}</option>
