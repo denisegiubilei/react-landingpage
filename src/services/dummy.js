@@ -1,5 +1,4 @@
-export const dummyData = [
-  {
+export const dummyData = [{
     id: 1,
     name: "Nome produto 1",
     imageUrl: "https://placeimg.com/400/400/animals?IdArquivo=6506376",
@@ -373,5 +372,53 @@ export const dummyData = [
       count: 10,
       value: 17.9
     }
+  }, {
+    id: 37,
+    name: "Nome produto 37",
+    imageUrl: "https://placeimg.com/400/400/animals",
+    oldPrice: 289,
+    price: 243,
+    description: "Product long description number 40 just to make more than one like of text.",
+    installments: {
+      count: 10,
+      value: 24.3
+    }
+  },
+  {
+    id: 38,
+    name: "Nome produto 38",
+    imageUrl: "https://placeimg.com/400/400/animals",
+    oldPrice: 264,
+    price: 245,
+    description: "Product long description number 41 just to make more than one like of text.",
+    installments: {
+      count: 10,
+      value: 24.5
+    }
+  },
+  {
+    id: 39,
+    name: "Nome produto 39",
+    imageUrl: "https://placeimg.com/400/400/animals",
+    oldPrice: 397,
+    price: 372,
+    description: "Product long description number 42 just to make more than one like of text.",
+    installments: {
+      count: 10,
+      value: 37.2
+    }
+  },
+  {
+    id: 40,
+    name: "Nome produto 40",
+    imageUrl: "https://placeimg.com/400/400/animals",
+    oldPrice: 395,
+    price: 379,
+    description: "Product long description number 43 just to make more than one like of text.",
+    installments: {
+      count: 10,
+      value: 37.9
+    }
+
   }
 ]
