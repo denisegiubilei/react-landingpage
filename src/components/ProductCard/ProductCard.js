@@ -4,7 +4,7 @@ import { ProductPrice } from '../ProductPrice'
 import './ProductCard.css'
 
 const ProductCard = ({ product }) => (
-  <arcticle id={product.id} className="card">
+  <article id={product.id} className="card">
     <a rel="bookmark">
       <Image 
         src={product.imageUrl} 
@@ -19,7 +19,7 @@ const ProductCard = ({ product }) => (
       />
     </a>
     <button className="addtocart button">Comprar</button>
-  </arcticle> 
+  </article> 
 )
 
 export default ProductCard

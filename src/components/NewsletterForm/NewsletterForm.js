@@ -29,7 +29,7 @@ const NewsletterForm = () => {
           <input type="text" id="name" name="name" placeholder="Nome" required min-length="2" className="input"/>
           <input type="email" id="email" name="email" placeholder="Endereço de e-mail" required className="input"/>
         </div>
-        <input type="submit" className="button regular" value={submitButtonText}/>
+        <input type="submit" className="button" value={submitButtonText}/>
       </form>
     </section>
   )
