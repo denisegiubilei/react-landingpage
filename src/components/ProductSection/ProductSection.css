@@ -11,7 +11,7 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-around;
   text-align: start;
   margin: auto;
   margin-bottom: 20px;
