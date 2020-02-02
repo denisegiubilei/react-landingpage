@@ -1,28 +1,30 @@
-.fields {
-  display: flex;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin: 20px;
-}
-
-.field {
-  margin: 10px 20px
-}
-
 .newsletter {
   text-align: center;
   padding: 100px 20px;
 }
 
-.title {
-  padding: 35px 0;
+.newsletter .fields {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 20px 0;
 }
 
-.button:hover{
+.newsletter .fields input {
+  padding: 10px;
+  margin: 10px;
+  width: 80%;
+  max-width: 300px;
+}
+
+.newsletter .button{
   background-color: #0b3658;
   color: white;
   font-weight: bold;
-  transform: scale(1.01);
+}
+
+.newsletter .button:hover {
+  transform: scale(1.02);
 }
