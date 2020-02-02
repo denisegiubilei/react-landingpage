@@ -18,6 +18,7 @@ const ProductSection = () => {
   const [products, setProducts] = useState([])
   const [currentPageNumber, setCurrentPageNumber] = useState(0)
   const [currentProducts, setCurrentProducts] = useState([])
+  const [endOfResults, setEndOfResults] = useState(false)
 
   useEffect(() => {
     getProducts()
@@ -30,14 +31,15 @@ const ProductSection = () => {
   const showProductsByPage = page => {
     const firstProductIndex = PRODUCTS_PER_PAGE * page
     const lastProductIndex = firstProductIndex + PRODUCTS_PER_PAGE
-    const productsInPage = products.slice(firstProductIndex, lastProductIndex )
+    const productsInPage = products.slice(firstProductIndex, lastProductIndex)
     setCurrentProducts([...currentProducts, ...productsInPage])
+    setCurrentPageNumber(page)
+    if (lastProductIndex >= products.length) setEndOfResults(true)
   }
   
   const loadMoreProducts = () => {
     const nextPage = currentPageNumber + 1
     showProductsByPage(nextPage)
-    setCurrentPageNumber(nextPage)
   }
 
   const sortProducts = (e) => {
@@ -63,7 +65,9 @@ const ProductSection = () => {
         As melhores ofertas para o seu bichinho! <FontAwesomeIcon icon={faPaw} />
       </h2>
       <div className="filters">
-        <label htmlFor="orderby"><FontAwesomeIcon icon={faSortAmountUpAlt} size='lg' /></label>
+        <label htmlFor="orderby">
+          <FontAwesomeIcon icon={faSortAmountUpAlt} size='lg' />
+        </label>
         <select id="orderby" className="select" onChange={sortProducts}>
           {ORDERBY_OPTIONS.map(option => (
             <option value={option.key}>{option.value}</option>
@@ -73,7 +77,9 @@ const ProductSection = () => {
       <div className="container">
         { currentProducts.map((product, index) => <ProductCard product={product} key={index} />) }
       </div>
-      <input type="button" className="button" value="Ver mais produtos!" onClick={loadMoreProducts}/>
+      {!endOfResults && 
+        <input type="button" className="button" value="Ver mais produtos!" onClick={loadMoreProducts}/>
+      }
     </section>
   )
 }
