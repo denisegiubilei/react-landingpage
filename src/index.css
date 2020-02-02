@@ -33,3 +33,18 @@ h2, h3 {
 .button:hover {
   transform: scale(1.02);
 }
+
+.select {
+  color: #888;
+  background-color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 12px;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .button {
+    width: 175px;
+  }
+}
