@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  text-align: center;
   background-color: white;
   padding: 20px;
   border-radius: 5px;
@@ -9,12 +10,12 @@
 }
 
 .card p {
-  padding: 5px 0;
-  overflow: hidden;
+  padding-top: 5px;
+  font-size: 12px;
 }
 
 .card h3 {
-  padding: 8px 0;
+  padding: 10px 0;
 }
 
 .card:hover {
@@ -30,12 +31,12 @@
   transform: scale(1.01);
 }
 
-.product-img {
+.card .product-img {
   height: auto;
   width: 100%;
 }
 
-.addtocart {
+.card .addtocart {
   color: #888;
   background-color: white;
   border: 1px solid #707070;
@@ -46,12 +47,12 @@
 
 @media only screen and (max-width: 600px) {
   .card {
-    flex: 100%; 
+    flex: 35%; 
     padding: 10px;
     border-radius: 5px;
   }
 
-  .addtocart {
+  .card .addtocart {
     padding: 10px;
   }
 }

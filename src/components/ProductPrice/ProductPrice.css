@@ -1,8 +1,14 @@
-.card .highlight, .price {
+.card .highlight {
   color: #0b3658;
+  font-size: 16px;
 }
 
 .card .price {
-  font-weight: bold;
+  color: #0b3658;
   font-size: 18px;
+  font-weight: bold;
+}
+
+.card .installments {
+  margin: 5px 0; 
 }

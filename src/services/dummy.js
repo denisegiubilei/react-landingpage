@@ -1,7 +1,7 @@
 export const dummyData = [
   {
     id: 1,
-    name: "Product Number 1",
+    name: "Nome produto 1",
     imageUrl: "https://placeimg.com/400/400/animals?IdArquivo=6506376",
     oldPrice: 373,
     price: 326,
@@ -13,7 +13,7 @@ export const dummyData = [
   },
   {
     id: 2,
-    name: "Product Number 2",
+    name: "Nome produto 2",
     imageUrl: "https://placeimg.com/400/400/animals?IdArquivo=6670538",
     price: 359,
     description: "Product description number 2 lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -24,7 +24,7 @@ export const dummyData = [
   },
   {
     id: 3,
-    name: "Product Number 3",
+    name: "Nome produto 3",
     imageUrl: "https://placeimg.com/400/400/animals?IdArquivo=6829158",
     oldPrice: 340,
     price: 329,
@@ -36,7 +36,7 @@ export const dummyData = [
   },
   {
     id: 4,
-    name: "Product Number 4",
+    name: "Nome produto 4",
     imageUrl: "https://placeimg.com/400/400/animals?IdArquivo=6875461",
     oldPrice: 292,
     price: 277,
@@ -48,7 +48,7 @@ export const dummyData = [
   },
   {
     id: 5,
-    name: "Product Number 5",
+    name: "Nome produto 5",
     imageUrl: "https://placeimg.com/400/400/animals?IdArquivo=6670538",
     oldPrice: 408,
     price: 384,
@@ -56,7 +56,7 @@ export const dummyData = [
   },
   {
     id: 6,
-    name: "Product Number 6",
+    name: "Nome produto 6",
     imageUrl: "https://placeimg.com/400/400/animals?IdArquivo=6829158",
     oldPrice: 128,
     price: 85,
@@ -68,7 +68,7 @@ export const dummyData = [
   },
   {
     id: 7,
-    name: "Product Number 7",
+    name: "Nome produto 7",
     imageUrl: "https://placeimg.com/400/400/animals?IdArquivo=6829158",
     oldPrice: 229,
     price: 199,
@@ -79,7 +79,7 @@ export const dummyData = [
     },
   }, {
     id: 7,
-    name: "Product Number 8",
+    name: "Nome produto 8",
     imageUrl: "https://placeimg.com/400/400/animals?IdArquivo=6829158",
     oldPrice: 229,
     price: 199,
@@ -90,7 +90,7 @@ export const dummyData = [
     },
   }, {
     id: 8,
-    name: "Product Number 8",
+    name: "Nome produto 8",
     imageUrl: "https://placeimg.com/400/400/animals?IdArquivo=6829158",
     oldPrice: 229,
     price: 199,
@@ -102,7 +102,7 @@ export const dummyData = [
   },
   {
     id: 10,
-    name: "Product Number 10",
+    name: "Nome produto 10",
     imageUrl: "https://placeimg.com/400/400/animals?IdArquivo=6670538",
     oldPrice: 436,
     price: 401,
@@ -114,7 +114,7 @@ export const dummyData = [
   },
   {
     id: 11,
-    name: "Product Number 11",
+    name: "Nome produto 11",
     imageUrl: "https://placeimg.com/400/400/animals?IdArquivo=5783178",
     oldPrice: 318,
     price: 305,
@@ -126,7 +126,7 @@ export const dummyData = [
   },
   {
     id: 12,
-    name: "Product Number 12",
+    name: "Nome produto 12",
     imageUrl: "https://placeimg.com/400/400/animals?IdArquivo=6747399",
     oldPrice: 370,
     price: 353,
@@ -138,7 +138,7 @@ export const dummyData = [
   },
   {
     id: 13,
-    name: "Product Number 13",
+    name: "Nome produto 13",
     imageUrl: "https://placeimg.com/400/400/animals?IdArquivo=6624363",
     oldPrice: 244,
     price: 202,
@@ -150,7 +150,7 @@ export const dummyData = [
   },
   {
     id: 14,
-    name: "Product Number 14",
+    name: "Nome produto 14",
     imageUrl: "https://placeimg.com/400/400/animals?IdArquivo=6747399",
     oldPrice: 389,
     price: 357,
@@ -162,7 +162,7 @@ export const dummyData = [
   },
   {
     id: 15,
-    name: "Product Number 15",
+    name: "Nome produto 15",
     imageUrl: "https://placeimg.com/400/400/animals?IdArquivo=6624363",
     oldPrice: 247,
     price: 219,
@@ -174,7 +174,7 @@ export const dummyData = [
   },
   {
     id: 16,
-    name: "Product Number 16",
+    name: "Nome produto 16",
     imageUrl: "https://placeimg.com/400/400/animals?IdArquivo=6829307",
     oldPrice: 354,
     price: 333,
@@ -186,7 +186,7 @@ export const dummyData = [
   },
   {
     id: 17,
-    name: "Product Number 17",
+    name: "Nome produto 17",
     imageUrl: "https://placeimg.com/400/400/animals?IdArquivo=6124117",
     oldPrice: 397,
     price: 375,
@@ -197,7 +197,7 @@ export const dummyData = [
     }
   }, {
     id: 20,
-    name: "Product Number 20",
+    name: "Nome produto 20",
     imageUrl: "https://placeimg.com/400/400/animals?IdArquivo=5783178",
     oldPrice: 229,
     price: 190,
@@ -209,7 +209,7 @@ export const dummyData = [
   },
   {
     id: 21,
-    name: "Product Number 21",
+    name: "Nome produto 21",
     imageUrl: "https://placeimg.com/400/400/animals?IdArquivo=6747399",
     oldPrice: 117,
     price: 81,
@@ -221,7 +221,7 @@ export const dummyData = [
   },
   {
     id: 22,
-    name: "Product Number 22",
+    name: "Nome produto 22",
     imageUrl: "https://placeimg.com/400/400/animals?IdArquivo=6124117",
     oldPrice: 345,
     price: 334,
@@ -233,7 +233,7 @@ export const dummyData = [
   },
   {
     id: 23,
-    name: "Product Number 23",
+    name: "Nome produto 23",
     imageUrl: "https://placeimg.com/400/400/animals?IdArquivo=6584703",
     oldPrice: 373,
     price: 357,
@@ -245,7 +245,7 @@ export const dummyData = [
   },
   {
     id: 24,
-    name: "Product Number 24",
+    name: "Nome produto 24",
     imageUrl: "https://placeimg.com/400/400/animals?IdArquivo=6584703",
     oldPrice: 108,
     price: 93,
@@ -257,7 +257,7 @@ export const dummyData = [
   },
   {
     id: 25,
-    name: "Product Number 25",
+    name: "Nome produto 25",
     imageUrl: "https://placeimg.com/400/400/animals?IdArquivo=5783178",
     oldPrice: 121,
     price: 95,
@@ -269,7 +269,7 @@ export const dummyData = [
   },
   {
     id: 26,
-    name: "Product Number 26",
+    name: "Nome produto 26",
     imageUrl: "https://placeimg.com/400/400/animals?IdArquivo=6829307",
     oldPrice: 382,
     price: 343,
@@ -281,7 +281,7 @@ export const dummyData = [
   },
   {
     id: 27,
-    name: "Product Number 27",
+    name: "Nome produto 27",
     imageUrl: "https://placeimg.com/400/400/animals?IdArquivo=6747399",
     oldPrice: 134,
     price: 123,
@@ -292,7 +292,7 @@ export const dummyData = [
     }
   }, {
     id: 30,
-    name: "Product Number 30",
+    name: "Nome produto 30",
     imageUrl: "https://placeimg.com/400/400/animals?IdArquivo=6584703",
     oldPrice: 132,
     price: 119,
@@ -304,7 +304,7 @@ export const dummyData = [
   },
   {
     id: 31,
-    name: "Product Number 31",
+    name: "Nome produto 31",
     imageUrl: "https://placeimg.com/400/400/animals?IdArquivo=6624363",
     oldPrice: 150,
     price: 132,
@@ -316,7 +316,7 @@ export const dummyData = [
   },
   {
     id: 32,
-    name: "Product Number 32",
+    name: "Nome produto 32",
     imageUrl: "https://placeimg.com/400/400/animals?IdArquivo=6584703",
     oldPrice: 368,
     price: 327,
@@ -328,7 +328,7 @@ export const dummyData = [
   },
   {
     id: 33,
-    name: "Product Number 33",
+    name: "Nome produto 33",
     imageUrl: "https://placeimg.com/400/400/animals?IdArquivo=5783178",
     oldPrice: 295,
     price: 280,
@@ -340,7 +340,7 @@ export const dummyData = [
   },
   {
     id: 34,
-    name: "Product Number 34",
+    name: "Nome produto 34",
     imageUrl: "https://placeimg.com/400/400/animals?IdArquivo=6829307",
     oldPrice: 264,
     price: 250,
@@ -352,7 +352,7 @@ export const dummyData = [
   },
   {
     id: 35,
-    name: "Product Number 35",
+    name: "Nome produto 35",
     imageUrl: "https://placeimg.com/400/400/animals?IdArquivo=6670538",
     oldPrice: 201,
     price: 175,
@@ -364,7 +364,7 @@ export const dummyData = [
   },
   {
     id: 36,
-    name: "Product Number 36",
+    name: "Nome produto 36",
     imageUrl: "https://placeimg.com/400/400/animals?IdArquivo=6747399",
     oldPrice: 191,
     price: 179,
