@@ -1,5 +1,5 @@
-import React from 'react'
-import './Footer.css' 
+import React from 'react';
+import './Footer.css';
 
 const Footer = () => (
   <footer className="footer">
@@ -7,6 +7,6 @@ const Footer = () => (
     <p>denise giubilei</p>
     <p>2020</p>
   </footer>
-)
+);
 
-export default Footer
+export default Footer;
