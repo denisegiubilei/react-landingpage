@@ -1,11 +1,10 @@
-import React from 'react'
-import { Installments } from './Installments'
-import { currencyFormat } from '../Utils'
-import './ProductPrice.css'
+import React from 'react';
+import { Installments } from './Installments';
+import { currencyFormat } from '../Utils';
+import './ProductPrice.css';
 
 const ProductPrice = ({ price, oldPrice, installments = {} }) => {
-
-  const hasDiscount = oldPrice > price
+  const hasDiscount = oldPrice > price;
 
   return (
     <>
@@ -22,11 +21,10 @@ const ProductPrice = ({ price, oldPrice, installments = {} }) => {
         </span>
       </p>
       <p className="installments">
-        <Installments installments={ installments } />
+        <Installments installments={installments} />
       </p>
     </>
-  )
-}
+  );
+};
 
-export default ProductPrice
-
+export default ProductPrice;

@@ -1,18 +1,18 @@
-import React from "react";
-import { render, cleanup } from "@testing-library/react";
+import React from 'react';
+import { render, cleanup } from '@testing-library/react';
 
-import ProductSection from "./ProductSection";
+import ProductSection from './ProductSection';
 
-describe("ProductsSection Component", () => {
+describe('ProductsSection Component', () => {
   afterEach(cleanup);
 
-  it("should render component", () => {
+  it('should render component', () => {
     const { container } = render(<ProductSection />);
     expect(container).toBeDefined();
   });
 
-  it("should render main section", () => {
+  it('should render main section', () => {
     const { getByTestId } = render(<ProductSection />);
-    expect(getByTestId("product-section")).toBeInTheDocument();
+    expect(getByTestId('product-section')).toBeInTheDocument();
   });
 });

@@ -1,1 +1,1 @@
-export { default as Installments } from "./Installments";
+export { default as Installments } from './Installments';

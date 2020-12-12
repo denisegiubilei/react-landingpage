@@ -1,1 +1,1 @@
-export { default as NewsletterForm } from "./NewsletterForm";
+export { default as NewsletterForm } from './NewsletterForm';
