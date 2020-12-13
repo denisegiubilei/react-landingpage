@@ -2,8 +2,8 @@ import React, { useEffect, useState } from 'react';
 
 import { getProducts } from '../../services/store';
 import { ProductList } from '../../components/ProductList';
-import { Sort } from '../../components/Sort';
 import { Loader } from '../../components/Loader';
+import { Sort } from '../../components/Sort';
 
 import './ProductSection.css';
 
@@ -48,20 +48,21 @@ const ProductSection = () => {
       <h2 data-testid="product-section-title" className="title">
         Aproveite as melhores ofertas!
       </h2>
-      { loading ? <Loader />
-        : (
-          <>
-            <Sort products={products} onSort={handleSort} />
-            <ProductList products={currentProducts} loading={loading} />
-          </>
-        )}
-      {!endOfResults && (
-        <input
-          type="button"
-          className="button"
-          value="Ver mais produtos!"
-          onClick={loadMoreProducts}
-        />
+      {loading ? (
+        <Loader />
+      ) : (
+        <>
+          <Sort products={products} onSort={handleSort} />
+          <ProductList products={currentProducts} loading={loading} />
+          {!endOfResults && (
+            <input
+              type="button"
+              className="button"
+              value="Ver mais produtos!"
+              onClick={loadMoreProducts}
+            />
+          )}
+        </>
       )}
     </section>
   );
