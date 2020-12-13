@@ -1,0 +1,11 @@
+.carousel-container {
+  padding: 20px 0;
+}
+
+.carousel-container h2 {
+  margin-bottom: 25px;
+}
+
+.carousel-container .card {
+  width: 80%;
+}
