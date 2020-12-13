@@ -19,9 +19,13 @@
         "react"
     ],
     "rules": {
-        "import/prefer-default-export": "off",
+        "import/prefer-default-export": 0,
         "react/prop-types": 0,
         "react/no-array-index-key": 0,
+        "no-console": 1,
+        "no-shadow": 1,
+        "jsx-a11y/anchor-is-valid": 1,
+        "jsx-a11y/label-has-associated-control": 1,
         "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
     }
 }
