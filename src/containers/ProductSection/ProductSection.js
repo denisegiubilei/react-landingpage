@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 
 import { getProducts } from '../../services/store';
 import { ProductList } from '../../components/ProductList';
+import { ProductCarousel } from '../../components/ProductCarousel';
 import { Loader } from '../../components/Loader';
 import { Sort } from '../../components/Sort';
 
@@ -64,6 +65,10 @@ const ProductSection = () => {
           )}
         </>
       )}
+      <section className="widgets-section" data-testid="widgets-section">
+        <ProductCarousel category="electronics" title="Eletrônicos selecionados para você!" />
+        <ProductCarousel category="women clothing" title="Escolha o presente que cabe no seu bolso :)" />
+      </section>
     </section>
   );
 };

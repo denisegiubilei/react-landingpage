@@ -1,6 +1,15 @@
 .product-section {
   text-align: center;
-  padding: 20px;
+}
+
+.widgets-section {
+  margin-top: 40px;
+  /* background-color: #55afff0d; */
+  padding: 0 20px;
+}
+
+.widgets-section h2 {
+  color: #dd4813;
 }
 
 .title {
