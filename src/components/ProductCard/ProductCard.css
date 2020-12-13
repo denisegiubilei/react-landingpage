@@ -16,6 +16,8 @@
 
 .card h3 {
   padding: 10px 0;
+  height: 45px;
+  overflow: hidden;
 }
 
 .card:hover {
