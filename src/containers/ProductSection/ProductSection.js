@@ -1,21 +1,16 @@
 import React, { useEffect, useState } from 'react';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSortAmountUpAlt } from '@fortawesome/free-solid-svg-icons';
-import { ProductCard } from '../ProductCard';
 import { getProducts } from '../../services/store';
+import { ProductList } from '../../components/ProductList';
+import { Sort } from '../../components/Sort';
+import { Loader } from '../../components/Loader';
 
 import './ProductSection.css';
 
 const ProductSection = () => {
   const PRODUCTS_PER_PAGE = 16;
 
-  const ORDERBY_OPTIONS = [
-    { key: 'relevance', value: 'Relevância' },
-    { key: 'priceAsc', value: 'Menor Preço' },
-    { key: 'priceDesc', value: 'Maior Preço' },
-  ];
-
+  const [loading, setLoading] = useState(true);
   const [products, setProducts] = useState([]);
   const [currentPageNumber, setCurrentPageNumber] = useState(0);
   const [currentProducts, setCurrentProducts] = useState([]);
@@ -25,6 +20,7 @@ const ProductSection = () => {
     getProducts().then((_products) => {
       setProducts(_products);
       setCurrentProducts(_products.slice(0, PRODUCTS_PER_PAGE));
+      setLoading(false);
     });
   }, []);
 
@@ -42,22 +38,8 @@ const ProductSection = () => {
     showProductsByPage(nextPage);
   };
 
-  const sortProducts = (e) => {
-    const sortOption = e.target.value;
-    switch (sortOption) {
-      case 'priceAsc':
-        products.sort((a, b) => a.price - b.price);
-        break;
-      case 'priceDesc':
-        products.sort((a, b) => b.price - a.price);
-        break;
-      case 'relevance':
-        products.sort((a, b) => a.id - b.id);
-        break;
-      default:
-        break;
-    }
-    setCurrentProducts(products.slice(0, PRODUCTS_PER_PAGE));
+  const handleSort = (sortedProducts) => {
+    setCurrentProducts(sortedProducts.slice(0, PRODUCTS_PER_PAGE));
     setCurrentPageNumber(0);
   };
 
@@ -66,23 +48,13 @@ const ProductSection = () => {
       <h2 data-testid="product-section-title" className="title">
         Aproveite as melhores ofertas!
       </h2>
-      <div data-testid="product-section-filters" className="filters">
-        <label htmlFor="orderby">
-          <FontAwesomeIcon icon={faSortAmountUpAlt} size="lg" />
-        </label>
-        <select id="orderby" className="select" onChange={sortProducts}>
-          {ORDERBY_OPTIONS.map((option) => (
-            <option value={option.key} key={option.key}>
-              {option.value}
-            </option>
-          ))}
-        </select>
-      </div>
-      <div className="container">
-        {currentProducts.map((product, index) => (
-          <ProductCard product={product} key={index} />
-        ))}
-      </div>
+      { loading ? <Loader />
+        : (
+          <>
+            <Sort products={products} onSort={handleSort} />
+            <ProductList products={currentProducts} loading={loading} />
+          </>
+        )}
       {!endOfResults && (
         <input
           type="button"
