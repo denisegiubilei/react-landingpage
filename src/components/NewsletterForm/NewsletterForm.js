@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { addUser } from '../../services/DummyService';
+import { addUser } from '../../services/store';
 import './NewsletterForm.css';
 
 const NewsletterForm = () => {
