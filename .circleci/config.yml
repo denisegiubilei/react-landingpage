@@ -10,20 +10,23 @@ jobs:
     steps:
       - checkout
       - run:
-          name: update-npm
-          command: 'sudo npm install -g npm@latest'
+          name: update-yarn
+          command: 'sudo yarn install'
       - restore_cache:
-          key: dependency-cache-{{ checksum "package.json" }}
+          name: Restore Yarn Package Cache
+          keys:
+            - yarn-packages-{{ checksum "yarn.lock" }}
       - run:
-          name: npm-install
-          command: npm install
+          name: Install Dependencies
+          command: yarn install --immutable
       - save_cache:
-          key: dependency-cache-{{ checksum "package.json" }}
+          name: Save Yarn Package Cache
+          key: yarn-packages-{{ checksum "yarn.lock" }}
           paths:
-            - ./node_modules
+            - ~/.cache/yarn
       - run:
           name: test
-          command: npm test
+          command: yarn test
 workflows:
   version: 2
   test:

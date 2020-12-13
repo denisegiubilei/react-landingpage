@@ -4,7 +4,7 @@ import { ProductCard } from '../ProductCard';
 
 import './ProductList.css';
 
-const ProductList = ({ products }) => (
+const ProductList = ({ products = [] }) => (
   <div className="product-list">
     {products.map((product) => (
       <ProductCard product={product} key={product.id} />

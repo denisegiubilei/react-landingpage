@@ -4,14 +4,14 @@ import { ProductPrice } from '../ProductPrice';
 import './ProductCard.css';
 
 const ProductCard = ({ product }) => (
-  <article id={product.id} className="card">
+  <article id={product?.id} className="card">
     <a rel="bookmark">
-      <Image src={product.image} alt={product.title} />
-      <h3>{product.title}</h3>
+      <Image src={product?.image} alt={product?.title} />
+      <h3>{product?.title}</h3>
       <ProductPrice
-        price={product.price}
-        oldPrice={product.oldPrice}
-        installments={product.installments}
+        price={product?.price}
+        oldPrice={product?.oldPrice}
+        installments={product?.installments}
       />
     </a>
     <button type="button" className="addtocart button">Comprar</button>
