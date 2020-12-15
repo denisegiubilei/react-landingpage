@@ -7,7 +7,7 @@ import './ProductList.css';
 const ProductList = ({ products = [] }) => (
   <div className="product-list">
     {products.map((product) => (
-      <ProductCard product={product} key={product.id} />
+      <ProductCard product={product} key={product.id} enableQuickView />
     ))}
   </div>
 );

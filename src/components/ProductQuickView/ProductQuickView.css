@@ -1,0 +1,56 @@
+.quickview {
+  display: flex;
+  position: relative;
+  text-align: center;
+  background-color: white;
+  padding: 20px;
+}
+
+.quickview p {
+  font-size: 16px;
+}
+
+
+.quickview h1 {
+  padding: 10px 0;
+  color: #0b3658;
+}
+
+.quickview .price {
+  font-size: 30px;
+  color: #dd4813;
+}
+
+.quickview .main-img-container {
+  width: 50%;
+  padding: 30px 0;
+}
+
+.quickview .img-container {
+  height: 350px;
+}
+
+.quickview .product-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0 25px 0;
+  width: 50%;
+}
+
+.quickview .product-img {
+  height: auto;
+  width: 100%;
+}
+
+.quickview .addtocart {
+  color: white;
+  background-color:#088111;
+  margin-top: 10px;
+  padding: 8px;
+}
+
+button:hover .button{
+  transform: scale(1.01);
+}
