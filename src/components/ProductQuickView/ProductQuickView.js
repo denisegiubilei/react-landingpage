@@ -14,7 +14,7 @@ const ProductQuickView = ({ product }) => (
     </div>
     <div className="product-info">
       <h1>{product?.title}</h1>
-      <p>{product.description}</p>
+      <p>{product?.description}</p>
       <div>
         <ProductPrice
           price={product?.price}
