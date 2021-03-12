@@ -7,7 +7,7 @@ import './ProductList.css';
 const ProductList = ({ products = [] }) => {
   const isMobile = useIsMobile();
   return (
-    <div className="product-list">
+    <div data-testid="product-list" className="product-list">
       {products.map((product) => (
         <ProductCard product={product} key={product.id} enableQuickView={!isMobile} />
       ))}

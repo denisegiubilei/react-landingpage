@@ -37,7 +37,12 @@ const Sort = ({ products, onSort }) => {
       <label htmlFor="orderby">
         <FontAwesomeIcon icon={faSortAmountUpAlt} size="lg" />
       </label>
-      <select id="orderby" className="select" onChange={sortProducts}>
+      <select
+        data-testid="select-orderby"
+        id="orderby"
+        className="select"
+        onChange={sortProducts}
+      >
         {ORDERBY_OPTIONS.map((option) => (
           <option value={option.key} key={option.key}>
             {option.value}

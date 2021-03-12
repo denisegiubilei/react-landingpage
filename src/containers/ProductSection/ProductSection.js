@@ -57,6 +57,7 @@ const ProductSection = () => {
           <ProductList products={currentProducts} loading={loading} />
           {!endOfResults && (
             <input
+              data-testid="btn-load-more-products"
               type="button"
               className="button"
               value="Ver mais produtos!"
