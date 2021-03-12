@@ -1,6 +1,6 @@
 
 ## React Landing page
-Simple e-commerce landing page with React. <br/>
+Simple e-commerce landing page with React and Cypress end-to-end frontend tests. <br/>
 Check it out: http://react-landingpage-dg.herokuapp.com/
 
 ## Available Scripts
