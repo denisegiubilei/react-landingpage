@@ -10,13 +10,13 @@ const ProductPrice = ({ price, oldPrice, installments = {} }) => {
     <>
       <p>
         { hasDiscount && <span>De: </span> }
-        <strike>
+        <strike data-testid="product-oldprice">
           { currencyFormat(oldPrice) }
         </strike>
       </p>
       <p>
         {/* <span>Por: </span> */}
-        <span className="price">
+        <span data-testid="product-price" className="price">
           { currencyFormat(price) }
         </span>
       </p>

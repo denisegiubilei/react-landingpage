@@ -18,7 +18,7 @@ const ProductCard = ({ product, enableQuickView }) => {
 
   return (
     <>
-      <article id={product?.id} className="card">
+      <article data-testid={`product-${product?.id}`} id={product?.id} className="card">
         <div role="main" onClick={openQuickView}>
           <Image src={product?.image} alt={product?.title} />
           <h3>{product?.title}</h3>
@@ -28,7 +28,13 @@ const ProductCard = ({ product, enableQuickView }) => {
             installments={product?.installments}
           />
         </div>
-        <button type="button" className="addtocart button">Comprar</button>
+        <button
+          type="button"
+          className="addtocart button"
+          data-testid={`addtocart-${product?.id}`}
+        >
+          Comprar
+        </button>
       </article>
       <Modal open={isOpen} onClose={closeQuickView}>
         <ProductQuickView product={product} />

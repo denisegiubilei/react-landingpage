@@ -8,7 +8,7 @@ import './ProductQuickView.css';
 const installments = (price) => price && { count: 3, value: price / 3 };
 
 const ProductQuickView = ({ product }) => (
-  <main className="quickview">
+  <main data-testid={`quickview-product-${product?.id}`} className="quickview">
     <div className="main-img-container">
       <Image src={product?.image} alt={product?.title} />
     </div>
@@ -21,7 +21,13 @@ const ProductQuickView = ({ product }) => (
           oldPrice={product?.oldPrice}
           installments={installments(product?.price)}
         />
-        <button type="button" className="addtocart button">Comprar</button>
+        <button
+          type="button"
+          className="addtocart button"
+          data-testid={`quickview-addtocart-${product?.id}`}
+        >
+          Comprar
+        </button>
       </div>
     </div>
   </main>

@@ -20,7 +20,7 @@ const NewsletterForm = () => {
   };
 
   return (
-    <section className="newsletter">
+    <section data-testid="newsletter-section" className="newsletter">
       <h2 className="title">Receba nossas ofertas em primeira mão!</h2>
       <p>Cadastre-se e fique por dentro das novidades ;)</p>
       <form id="newsletter-form" onSubmit={submitNewsletter}>
@@ -28,7 +28,7 @@ const NewsletterForm = () => {
           <input type="text" id="name" name="name" placeholder="Nome" required min-length="2" className="input" />
           <input type="email" id="email" name="email" placeholder="Endereço de e-mail" required className="input" />
         </div>
-        <input type="submit" className="button" value={submitButtonText} />
+        <input data-testid="btn-submit-newsletter" type="submit" className="button" value={submitButtonText} />
       </form>
     </section>
   );

@@ -17,9 +17,13 @@ const Modal = ({ children, onClose, open }) => {
   }, []);
 
   return (
-    <div className="modal" style={{ display: open ? 'block' : 'none' }}>
+    <div
+      className="modal"
+      data-testid="modal"
+      style={{ display: open ? 'block' : 'none' }}
+    >
       <section className="modal-main">
-        <button type="button" onClick={onClose}>X</button>
+        <button data-testid="btn-close-modal" type="button" onClick={onClose}>X</button>
         {children}
       </section>
     </div>

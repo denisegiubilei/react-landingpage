@@ -3,7 +3,7 @@ import React from 'react';
 import './Loader.css';
 
 const Loader = () => (
-  <div className="lds-dual-ring" />
+  <div data-testid="loader" className="lds-dual-ring" />
 );
 
 export default Loader;
